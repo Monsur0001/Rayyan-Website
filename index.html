@@ -212,9 +212,8 @@
       </div>
     </section>
 
-    <!-- GUESTBOOK -->
    
-
+<!-- GUESTBOOK SECTION -->
 <section
   id="guestbook"
   class="section guestbook-section"
@@ -222,11 +221,12 @@
 >
   <div class="container guestbook-layout">
 
-    <!-- GUESTBOOK FORM -->
     <div class="guestbook-main">
 
       <div class="section-heading left">
-        <span class="overline">LOVE NOTES FOR LATER</span>
+        <span class="overline">
+          LOVE NOTES FOR LATER
+        </span>
 
         <h2 id="guestbook-title">
           Guestbook
@@ -236,14 +236,15 @@
         <p>Leave your love for Baby Rayyan</p>
       </div>
 
+      <!-- EMAIL GUESTBOOK FORM -->
       <form
         class="guestbook-form"
         id="guestbook-form"
-        action="https://formsubmit.co/rayyanakintunde.abdulrahman@gmail.com"
+        action="https://YOUR-WORKER.workers.dev/messages"
         method="POST"
+        accept-charset="UTF-8"
       >
 
-        <!-- Visitor's Name -->
         <label for="guestbook-name">
           Your name
         </label>
@@ -259,7 +260,6 @@
           required
         >
 
-        <!-- Visitor's Message -->
         <label for="guestbook-message">
           Your message
         </label>
@@ -270,50 +270,39 @@
           rows="5"
           placeholder="Write your wishes and prayers for Rayyan..."
           minlength="3"
-          maxlength="1200"
+          maxlength="1500"
           required
         ></textarea>
 
-        <!-- Email Subject -->
-        <input
-          type="hidden"
-          name="_subject"
-          value="A New Guestbook Message for Rayyan"
-        >
+        <!-- Spam protection field -->
+        <div class="guestbook-honey" aria-hidden="true">
+          <label for="guestbook-website">
+            Leave this field empty
+          </label>
 
-        <!-- Email Formatting -->
-        <input
-          type="hidden"
-          name="_template"
-          value="table"
-        >
+          <input
+            type="text"
+            id="guestbook-website"
+            name="website"
+            tabindex="-1"
+            autocomplete="off"
+          >
+        </div>
 
-        <!-- Spam Protection -->
-        <input
-          type="text"
-          name="_honey"
-          style="display:none"
-          tabindex="-1"
-          autocomplete="off"
-        >
-
-        <!-- Submit Button -->
         <button
-          class="button button-primary"
           type="submit"
+          class="button button-primary"
         >
           Send Love
           <span aria-hidden="true">♡</span>
         </button>
 
-        <!-- Guestbook Notice -->
         <p class="form-notice">
-          Your message will be delivered
-          straight to Rayyan's inbox. ♡
+          Your wishes and prayers will be
+          delivered privately to Rayyan's inbox. ♡
         </p>
 
       </form>
-
     </div>
 
     <!-- GUESTBOOK ILLUSTRATION -->
@@ -321,7 +310,7 @@
 
       <img
         src="dad2.jpeg"
-        alt="A blue hot-air balloon floating above a little cloud"
+        alt="A beautiful blue hot-air balloon"
         loading="lazy"
       >
 
@@ -336,7 +325,6 @@
   </div>
 </section>
 <!-- END GUESTBOOK SECTION -->
-
 
     <!-- SHARE THE LOVE -->
     <section id="share" class="section share-section" aria-labelledby="share-title">
